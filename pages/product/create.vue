@@ -112,12 +112,12 @@ const uploadFile = async (formFile: any) => {
             :type="item.type"
             :id="item.name"
             v-model="item.value"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            class="bg-gray-50 border border-gray-500 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             :placeholder="item.placeholder"
             :required="item.required"
           >
         </div>
-        <button type="submit" class="text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+        <button type="submit" class="text-white bg-primary bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
           <span v-if="!isLoading">Submit</span>
           <div v-else class="flex items-center gap-3">
               <div class="w-5 h-5 rounded-full border-2 border-t-blue-500 animate-spin"></div>
